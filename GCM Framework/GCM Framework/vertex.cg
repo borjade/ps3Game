@@ -1,0 +1,40 @@
+
+//You should be pretty familiar with what this is doing,
+//even if you've never used Cg before!
+//we have three vertex attributes (position,color, texCoord),
+//three uniforms (to form our mvp matrix), and three outputs
+//(oPosition,oColor,oTexCoord). We're simply multiplying the
+//matrices together, and then transforming the vertex by the
+//resulting mvp matrix. Note that in Cg, positions automatically
+//get upcasted to a 4-component vector, so you don't have to 
+//do it yourself!
+
+struct output {
+	float4 position : POSITION;
+	float4 color    : COLOR;
+	float2 texCoord : TEXCOORD0;
+};
+	
+output main
+(
+	float4 position	: POSITION,
+	float4 color	: COLOR,
+	float2 texCoord	: TEXCOORD0,
+
+    uniform float4x4 modelMat,// : C0,
+	uniform float4x4 viewMat,//  : C4,
+	uniform float4x4 projMat//  : C8,
+)
+{	
+	output OUT;
+
+	float4x4 mvp = mul(projMat, mul(viewMat, modelMat));
+	
+	//mvp = projMat * viewMat * modelMat;
+	
+	OUT.position 	 = mul(mvp, position);
+	OUT.color 		 = color;
+	OUT.texCoord	 = texCoord;
+	
+	return OUT;
+}

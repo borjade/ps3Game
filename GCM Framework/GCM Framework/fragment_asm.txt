@@ -1,0 +1,16 @@
+# profile sce_fp_rsx
+# parameterCount 4
+# instructionCount 3
+# attributeInputMask FrontDiffuse, BackDiffuse, Tex0
+# registerCount 2
+
+index: type: name: semantic: res: # of const, const offset
+#0: float4: color_in: in.COLOR: COLOR0
+#1: float2: texcoord: in.TEXCOORD0: TEXCOORD0
+#2: samplerRECT: texture: : TEXUNIT0
+#3: float4: color_out: out.COLOR: COLOR0
+
+MOVHC H0, f[COL0];
+TEXR R1(NE), f[TEX0], TEX0;
+MULR R0, H0, R1; # last instruction
+END

@@ -1,0 +1,18 @@
+/*
+Should be pretty familiar territory, this. We take in 
+a colour and a tex coordinate, and sample the uniform
+texture sampler to obtain the colour. 
+*/
+void main
+(
+	float4 color_in      : COLOR,
+	float2 texcoord		 : TEXCOORD0,
+	uniform samplerRECT texture,
+	//uniform samplerRECT textureTwo,
+	
+	out float4 color_out : COLOR
+)
+{
+	color_out = color_in;// * texRECT(texture, texcoord);// * texRECT(textureTwo, texcoord);
+	//color_out = float4(1.0,1.0,0.0,1.0);
+}

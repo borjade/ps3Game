@@ -1,0 +1,74 @@
+﻿Build started 06/05/2015 16:24:56.
+     1>Project "D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\GCM Framework.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         GCMRenderer.cpp
+         ps3ppusnc.exe -D_DEBUG -D__CELL_ASSERT__ -D__PS3__ -o PS3_Debug\GCMRenderer.o -c -Xdepmode=1 -MD -Xmserrors -I. -ID:\SDKDump\target\ppu\include -ID:\SDKDump\target\common\include -I"D:\SDKDump\host-win32\sn\ppu\include" -IC:/usr/local/cell\target\ppu\include -IC:/usr/local/cell\target\common\include -I"C:/usr/local/cell\host-win32\sn\ppu\include" -g -O0 -Xc-=rtti --use_pch="PS3_Debug\GCM Framework.pch" "D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\GCMRenderer.cpp"
+     1>SNCCL : warning 1641: PreCompiled Header definition mismatch: PCH file uses PCH header file "stdafx.h", current file uses header file "GCMRenderer.h"
+         
+     1>SNCCL : warning 632: the initial sequence of preprocessing directives is not compatible with those of precompiled header file "PS3_Debug\GCM Framework.pch"
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\GCMRenderer.cpp(338,44): warning 1322: taking the address of a temporary
+         
+         Game.cpp
+         ps3ppusnc.exe -D_DEBUG -D__CELL_ASSERT__ -D__PS3__ -o PS3_Debug\Game.o -c -Xdepmode=1 -MD -Xmserrors -I. -ID:\SDKDump\target\ppu\include -ID:\SDKDump\target\common\include -I"D:\SDKDump\host-win32\sn\ppu\include" -IC:/usr/local/cell\target\ppu\include -IC:/usr/local/cell\target\common\include -I"C:/usr/local/cell\host-win32\sn\ppu\include" -g -O0 -Xc-=rtti --use_pch="PS3_Debug\GCM Framework.pch" "D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp"
+     1>SNCCL : warning 1641: PreCompiled Header definition mismatch: PCH file uses PCH header file "stdafx.h", current file uses header file "Game.h"
+         
+     1>SNCCL : warning 632: the initial sequence of preprocessing directives is not compatible with those of precompiled header file "PS3_Debug\GCM Framework.pch"
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Renderer.h(63,33): error 20: identifier "mvpMatrix" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Renderer.h(64,36): error 20: identifier "mvpMatrix" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\CollisionVolume.h(8,6): warning 1700: class "CollisionVolume" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\CollisionVolume.h(17,6): warning 1700: class "CollisionSphere" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\CollisionVolume.h(40,6): warning 1700: class "CollisionPlane" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\CollisionVolume.h(67,6): warning 1700: class "CollisionAABB" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\CollisionVolume.h(82,6): warning 1700: class "CollisionOBB" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\PhysicsNode.h(12,6): warning 1700: class "PhysicsNode" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\PhysicsNode.h(68,23): error 20: identifier "linearDamp" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\PhysicsSystem.h(39,25): warning 383: in-class initializer for nonstatic member is nonstandard
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\GameClass.h(14,6): warning 1700: class "GameClass" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\PlayerClass.h(7,6): warning 1700: class "PlayerClass" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.h(9,6): warning 1700: class "Game" has virtual functions but non-virtual destructor
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(34,1): error 20: identifier "player1" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(36,1): error 20: identifier "spawnPoint" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(37,36): error 20: identifier "controller" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(38,35): error 136: class "PhysicsSystem" has no member "addPlayerRef"
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(56,41): warning 175: expression has no effect
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(60,3): error 20: identifier "spawnPoint" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(72,18): error 20: identifier "controller" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(74,24): error 20: identifier "spawnPoint" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(80,24): error 20: identifier "spawnPoint" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(87,2): error 20: identifier "player1" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(96,2): error 20: identifier "player1" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(99,1): error 20: identifier "player1" is undefined
+         
+     1>D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\Game.cpp(104,24): error 20: identifier "spawnPoint" is undefined
+         
+     1>Done Building Project "D:\Source\Workspaces\iRunner\SourceCode\GCM Framework\GCM Framework\GCM Framework.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.53
